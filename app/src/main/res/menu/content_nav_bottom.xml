@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_nav_games"
+        android:icon="@drawable/ic_games"
+        android:title="Ойындар" />
+    <item
+        android:id="@+id/bottom_nav_translate"
+        android:icon="@drawable/ic_translate"
+        android:title="Аударма" />
+    <item
+        android:id="@+id/bottom_nav_camera"
+        android:icon="@drawable/ic_camera"
+        android:title="" />
+    <item
+        android:id="@+id/bottom_nav_alphabet"
+        android:icon="@drawable/ic_alphabet"
+        android:title="Алфавит" />
+    <item
+        android:id="@+id/bottom_nav_menu"
+        android:icon="@drawable/ic_menu"
+        android:title="Ангимелер" />
+</menu>

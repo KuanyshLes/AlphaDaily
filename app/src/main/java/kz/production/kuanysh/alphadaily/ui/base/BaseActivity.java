@@ -34,8 +34,7 @@ import android.widget.Toast;
 import butterknife.Unbinder;
 import kz.production.kuanysh.alphadaily.AlphaDaily;
 import kz.production.kuanysh.alphadaily.R;
-import kz.production.kuanysh.alphadaily.di.component.ActivityComponent;
-import kz.production.kuanysh.alphadaily.di.component.DaggerActivityComponent;
+import kz.production.kuanysh.alphadaily.di.component.*;
 import kz.production.kuanysh.alphadaily.di.module.ActivityModule;
 import kz.production.kuanysh.alphadaily.utils.CommonUtils;
 import kz.production.kuanysh.alphadaily.utils.NetworkUtils;
@@ -70,7 +69,7 @@ public abstract class BaseActivity extends AppCompatActivity
 
     @Override
     protected void attachBaseContext(Context newBase) {
-       // super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+        super.attachBaseContext(newBase);
     }
 
     @TargetApi(Build.VERSION_CODES.M)

@@ -5,8 +5,7 @@ import android.app.Application;
 import javax.inject.Inject;
 
 import kz.production.kuanysh.alphadaily.data.DataManager;
-import kz.production.kuanysh.alphadaily.di.component.ApplicationComponent;
-import kz.production.kuanysh.alphadaily.di.component.DaggerApplicationComponent;
+import kz.production.kuanysh.alphadaily.di.component.*;
 import kz.production.kuanysh.alphadaily.di.module.ApplicationModule;
 
 /**
