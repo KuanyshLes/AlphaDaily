@@ -8,6 +8,9 @@ import dagger.Module;
 import dagger.Provides;
 import io.reactivex.disposables.CompositeDisposable;
 import kz.production.kuanysh.alphadaily.di.ActivityContext;
+import kz.production.kuanysh.alphadaily.ui.main.MainMvpPresenter;
+import kz.production.kuanysh.alphadaily.ui.main.MainMvpView;
+import kz.production.kuanysh.alphadaily.ui.main.MainPresenter;
 import kz.production.kuanysh.alphadaily.utils.rx.AppSchedulerProvider;
 import kz.production.kuanysh.alphadaily.utils.rx.SchedulerProvider;
 
@@ -47,6 +50,11 @@ public class ActivityModule {
     @Provides
     LinearLayoutManager provideLinearLayoutManager(AppCompatActivity activity) {
         return new LinearLayoutManager(activity);
+    }
+
+    @Provides
+    MainMvpPresenter<MainMvpView> provideMainPresenter(MainPresenter<MainMvpView> presenter){
+        return presenter;
     }
 
 }
