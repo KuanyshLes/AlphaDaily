@@ -5,6 +5,10 @@ import android.os.Bundle;
 
 import kz.production.kuanysh.alphadaily.R;
 
+/**
+ * Created by User on 11.08.2018.
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -12,4 +16,5 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
 }
